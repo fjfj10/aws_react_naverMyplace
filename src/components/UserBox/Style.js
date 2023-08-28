@@ -30,16 +30,15 @@ export const SUserProfile = css`
 `;
 
 export const SUserImgContainer = css`
-    position: relative;
     margin-right: 25px;
     border-radius: 50%;
-    width: 64px;
+    width: 65px;
     height: 64px;
     overflow: hidden;
 `;
 
 export const SImgBack = css`
-    position: absolute;
+    position: relative;
     z-index: 1;
     width: 64px;
     height: 64px;
@@ -98,7 +97,7 @@ export const SSpan = css`
 `;
 
 export const SReviewIcon = css`
-    margin-right: 5px;
+    margin-right: 3px;
     width: 22px;
     height: 18px;
 `;
@@ -122,7 +121,7 @@ export const SMissionButton = css`
 `;
 
 export const SMissionIcon = css`
-    margin-right: 5px;
+    margin-right: 3px;
     width: 20px;
     height: 17px;
 `;

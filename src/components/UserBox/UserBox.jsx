@@ -11,8 +11,9 @@ function UserBox(props) {
             <div css={S.SContainer}>
                 <button css={S.SUserProfile}>
                     <div css={S.SUserImgContainer}>
-                        <div css={S.SImgBack}></div>
-                        <img src="/images/profile-img.jpg" alt="profileImg" css={S.SUserImg}/>
+                        <div css={S.SImgBack}>
+                            <img src="/images/profile-img.png" alt="profileImg" css={S.SUserImg}/>
+                        </div>
                     </div>
                     <div css={S.SLogin}>
                         <span>로그인하기</span>
