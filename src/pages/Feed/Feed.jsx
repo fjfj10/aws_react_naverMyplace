@@ -3,8 +3,12 @@ import React from 'react';
 import * as S from './Style'
 import Menubar from '../../components/Menubar/Menubar';
 import { Link } from 'react-router-dom';
+import MainContainer from '../../components/MainContainer/MainContainer';
+import { Route, Routes } from 'react-router-dom';
+import FilterAll from './FilterAll/FilterAll';
+import FilterFollowing from './FilterFollowing/FilterFollowing';
 
-function Feed(props) {
+function Feed({ children }) {
 
     return (
         <div>
@@ -25,9 +29,9 @@ function Feed(props) {
                     </button>
                 </Link>
             </Menubar>
-            <div>
-                
-            </div>
+            <MainContainer>
+                {children}
+            </MainContainer>
         </div>
     );
 }

@@ -30,7 +30,6 @@ function Mainlayout({ children }) {
                         <p>가능합니다</p>
                     </div>
                     <div css={S.SButtonContainer}>
-                        {/* 클릭시 모달 닫히게 */}
                         <button css={S.SButton} onClick={handleCloseModalOnClick} >확인</button>
                     </div>
                 </div>

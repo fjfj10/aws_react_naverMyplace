@@ -18,7 +18,7 @@ export const SModal= (isModalshow) => css`
     align-items: center;
     width: 100%;
     height: 963px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 `;
 
 export const SAlert = css`
