@@ -6,14 +6,13 @@ export const SLayout = css`
 
 export const SMain = css`
     position: absolute;
-    z-index: 1;
     width: 100%;
 `;
 
-export const SModal = css`
+export const SModal= (isModalshow) => css`
     position: absolute;
-    z-index: 2;
-    display: none;
+    z-index: 3;
+    display: ${isModalshow ? "flex" : "none"};
     flex-direction: column;
     justify-content: center;
     align-items: center;

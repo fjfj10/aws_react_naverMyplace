@@ -3,11 +3,14 @@ import React from 'react';
 import * as S from './Style'
 import Menubar from '../../components/Menubar/Menubar';
 import { Link } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+import { isModalShowState } from '../../store/Modal';
 
 function Review(props) {
+    const [ isModalShow, setIsModalShow ] = useRecoilState(isModalShowState);
 
-    const handleReviewButtonOnClick = () => {
-        
+    const handleOpenModalOnClick = () => {
+        setIsModalShow(!isModalShow);
     }
 
     return (
@@ -50,7 +53,7 @@ function Review(props) {
                     </div>
                     <div css={S.SButtonContainer}>
                         {/* 버튼 틀릭 시 모달 창 나오게 하기 */}
-                        <button css={S.SReviewButton}>리뷰 참여하기</button>
+                        <button css={S.SReviewButton} onClick={handleOpenModalOnClick}>리뷰 참여하기</button>
                     </div>                
                 </div>
             </div>
