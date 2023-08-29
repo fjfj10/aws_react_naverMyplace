@@ -4,6 +4,7 @@ import * as S from './Style'
 import MainFilter from '../../../components/MainFilter/MainFilter';
 import { TfiTarget } from 'react-icons/tfi'
 import { Link } from 'react-router-dom';
+import PostContainer from '../../../components/MainContainer/PostContainer/PostContainer';
 
 function FilterFollowing(props) {
 
@@ -41,6 +42,28 @@ function FilterFollowing(props) {
                     </button>
                 </div>
             </MainFilter>
+            <div css={S.SCategoryListContainer}>
+                <div css={S.SCategoryList}>
+                    <button>한식</button>
+                    <button>테마파크</button>
+                    <button>카페</button>
+                    <button>피크닉</button>
+                    <button>양식</button>
+                    <button>등산/트레킹</button>
+                    <button>일식</button>
+                    <button>아이와 함께</button>
+                    <button>역사유적</button>
+                    <button>분식/치킨</button>
+                    <button>숙박</button>
+                    <button>중식</button>
+                    <button>체험관광</button>
+                    <button>아시아/퓨전음식</button>
+                    <button>캠핑</button>
+                    <button>뷔페/레스토랑</button>
+                    <button>낚시</button>
+                </div>
+            </div>
+            <PostContainer />
         </>
     );
 }
