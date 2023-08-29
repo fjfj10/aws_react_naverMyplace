@@ -32,14 +32,14 @@ export const SUserProfile = css`
 export const SUserImgContainer = css`
     margin-right: 25px;
     border-radius: 50%;
-    width: 65px;
+    width: 64px;
     height: 64px;
-    overflow: hidden;
 `;
 
 export const SImgBack = css`
     position: relative;
     z-index: 1;
+    border-radius: 50%;
     width: 64px;
     height: 64px;
     background-color: white;
@@ -52,6 +52,7 @@ export const SUserImg = css`
     left: 2px;
     bottom: 2px;
     right: 2px;
+    border: 1px solid rgba(0,0,0,0.1);
     border-radius: 50%;
     width: 60px;
     height: 60px;
