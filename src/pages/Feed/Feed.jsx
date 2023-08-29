@@ -2,7 +2,7 @@ import React from 'react';
 /** @jsxImportSource @emotion/react */
 import * as S from './Style'
 import Menubar from '../../components/Menubar/Menubar';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import MainContainer from '../../components/MainContainer/MainContainer';
 import { Route, Routes } from 'react-router-dom';
 import FilterAll from './FilterAll/FilterAll';
@@ -29,9 +29,8 @@ function Feed({ children }) {
                     </button>
                 </Link>
             </Menubar>
-            <MainContainer>
-                {children}
-            </MainContainer>
+            <Outlet />
+            {children}
         </div>
     );
 }

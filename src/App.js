@@ -16,11 +16,18 @@ function App() {
       <Global styles={GSCommon}/>
       <Mainlayout>
         <Routes>
-          <Route path='/feed' element={ <Feed /> } />
-          <Route path='/feed/:all' element={ <FilterAll /> }/>
-          <Route path='/feed/:following' element={ <FilterFollowing /> }/>
-          <Route path='/review' element={ <Review /> } />
-          <Route path='/visit' element={ <Visit /> } />
+          <Route path='/' element={<Feed />}>
+            <Route index element={<FilterAll />} />
+            <Route path='all' element={<FilterAll />} />
+            <Route path='following' element={<FilterFollowing />} />
+          </Route>
+          <Route path='/feed' element={<Feed />}>
+            <Route index element={<FilterAll />} />
+            <Route path='all' element={<FilterAll />} />
+            <Route path='following' element={<FilterFollowing />} />
+          </Route>
+          <Route path='/review' element={<Review />} />
+          <Route path='/visit' element={<Visit />} />
         </Routes>
       </Mainlayout>
     </>

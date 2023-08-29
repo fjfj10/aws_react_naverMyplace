@@ -110,3 +110,39 @@ export const SLocationSpan = css`
     margin-top: 12px;
     font-size: 15px;
 `;
+
+export const SThemeContainer = css`
+    display: flex;
+    width: 100%;
+    height: 48px;
+`;
+
+export const SCategoryListContainer = css`
+    margin: 0px auto;
+    padding: 0px 20px;
+    width: 720px;
+    height: 48px;
+`;
+
+export const SCategoryList = css`
+    margin: 0px -20px;
+    padding: 10px 0px 2px 0px;
+    width: 720px;
+    height: 48px;
+`;
+
+export const SPostContainer = css`
+    width: 100%;
+    height: auto;
+`;
+
+export const SPost = css`
+    width: 100%;
+    height: 659px;
+`;
+
+export const SPostLayout = css`
+    width: 100%;
+    height: 659px;
+`;
+

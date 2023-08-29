@@ -17,12 +17,12 @@ function FilterFollowing(props) {
             <MainFilter>
                 <div css={S.SButtons}>
                     <div css={S.SAllButtonContainer}>
-                        <Link to={'/all'}>
+                        <Link to={'/feed/all'}>
                         <button css={S.SAllButton}>전체</button>
                         </Link>
                     </div>
                     <div css={S.SFollowingButtonContainer}>
-                        <Link to={'/following'}>
+                        <Link to={'/feed/following'}>
                         <button css={S.SFollwingButton}>팔로잉</button>
                         </Link>
                     </div>

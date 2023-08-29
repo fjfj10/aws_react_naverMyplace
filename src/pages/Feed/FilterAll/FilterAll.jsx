@@ -5,6 +5,7 @@ import MainFilter from '../../../components/MainFilter/MainFilter';
 import { TfiTarget } from 'react-icons/tfi'
 import { Link } from 'react-router-dom';
 import MainContainer from '../../../components/MainContainer/MainContainer';
+import CategoryList from '../../../components/CategoryList/CategoryList';
 
 function FilterAll(props) {
 
@@ -18,12 +19,12 @@ function FilterAll(props) {
             <MainFilter>
                 <div css={S.SButtons}>
                     <div css={S.SAllButtonContainer}>
-                        <Link to={'all'}>
+                        <Link to={'/feed/all'}>
                         <button css={S.SAllButton}>전체</button>
                         </Link>
                     </div>
                     <div css={S.SFollowingButtonContainer}>
-                        <Link to={'following'}>
+                        <Link to={'/feed/following'}>
                         <button css={S.SFollwingButton}>팔로잉</button>
                         </Link>
                     </div>
@@ -42,9 +43,26 @@ function FilterAll(props) {
                     </button>
                 </div>
             </MainFilter>
-            <div>
-                피드내용
+            <div css={S.SCategoryListContainer}>
+                <div css={S.SCategoryList}>
+                    <button>한식</button>
+                    <button>테마파크</button>
+                    <button>카페</button>
+                    <button>피크닉</button>
+                    <button>양식</button>
+                    <button>등산/트레킹</button>
+                    <button>일식</button>
+                    <button>아이와 함께</button>
+                    <button>역사유적</button>
+                </div>
             </div>
+            <ul css={S.SPostContainer}>
+                <li css={S.SPost}>
+                    <div css={S.SPostLayout}>
+
+                    </div>
+                </li>
+            </ul>
         </MainContainer>
     );
 }
