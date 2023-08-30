@@ -7,18 +7,24 @@ import { GoSmiley, GoStar } from 'react-icons/go'
 import { BsChevronRight } from 'react-icons/bs'
 import postListData from './PostList';
 
-function PostContainer(props) {
+function PostContainer({ name }) {
     const [ isOptionShow, setIsOptionShow ] = useState(false);
 
     const handlePostOptionButtonOnClick = () => {
         setIsOptionShow(!isOptionShow);
     }
 
-    const postList = postListData;
+    let filteredPostList = postListData;
+
+    // 팔로잉 버튼을 눌렀을 때 isFollowing이 true인 post만 보여줌
+    // 전체와 팔로잉 버튼을 누를 때마다 재 랜더링 되므로 useState 사용하지 않음
+    if (name === "following") {
+        filteredPostList = postListData.filter(post => post.isFollowing)
+    }
 
     return (
         <ul css={S.SContainer}>
-            {postList.map((post) => 
+            {filteredPostList.map((post) => 
                 <li css={S.SPost} key={post.id}>
                     <div css={S.SPostLayout}>
                         <div css={S.SProfil}>

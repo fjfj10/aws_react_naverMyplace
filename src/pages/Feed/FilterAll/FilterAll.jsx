@@ -10,7 +10,8 @@ import CategoryList from '../../../components/CategoryList/CategoryList';
 import PostContainer from '../../../components/MainContainer/PostContainer/PostContainer';
 
 function FilterAll(props) {
-
+    const name = "all"
+    
     const handleAddButtonOnClick = () => {
         alert("네이버 로그인 하신 후 이용해 주시기 바랍니다.")
     }
@@ -66,7 +67,7 @@ function FilterAll(props) {
                     <button>낚시</button>
                 </div>
             </div>
-            <PostContainer />
+            <PostContainer name={name}/>
         </MainContainer>
     );
 }

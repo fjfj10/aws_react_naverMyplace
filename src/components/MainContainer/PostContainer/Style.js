@@ -67,7 +67,7 @@ export const SImg = css`
 
 export const SProfilInfoContainer = css`
     margin-top: 3px;
-    width: 122.5px;
+    min-width: 122.5px;
     height: 38px;
 `;
 
@@ -83,7 +83,6 @@ export const SUserName = css`
 export const SUserInfo = css`
     display: flex;
     margin-top: 2px;
-    width: 122.5px;
     height: 16px;
     text-align: left;
 `;

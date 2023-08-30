@@ -22,7 +22,7 @@ const postListData = [
         category: "한식",
         profilImgSrc: "/images/profile-img.png",
         username: "test2",
-        reviewCount: 0,
+        reviewCount: 5,
         follower: 0,
         postImgSrc: "",
         text: "제주 찐맛집. 보말죽 먹고싶을땐 꼭 여기오세요 존맛탱",
@@ -33,6 +33,23 @@ const postListData = [
         location: "남순이네국수",
         adrress: "제주특별자치도 제주시 용담삼동"
     },
+    {
+        id: 3,
+        isFollowing: true,
+        category: "양식",
+        profilImgSrc: "/images/profile-img.png",
+        username: "test3",
+        reviewCount: 10,
+        follower: 100,
+        postImgSrc: "",
+        text: "테스트 3",
+        tagImg: "/images/store-wide-img.png",
+        tagContent: "매장이 넓어요",
+        agreeCount: 0,
+        date: "7.23일",
+        location: "ShackShack",
+        adrress: "부산광역시 부산진구 부전동"
+    }
 ];
 
 export default postListData;
