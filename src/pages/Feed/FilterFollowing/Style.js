@@ -111,17 +111,3 @@ export const SLocationSpan = css`
     font-size: 15px;
 `;
 
-export const SCategoryListContainer = css`
-    margin: 0px auto;
-    padding: 0px 20px;
-    width: 720px;
-    height: 48px;
-`;
-
-export const SCategoryList = css`
-    margin: 0px -20px;
-    padding: 10px 0px 2px 0px;
-    width: 720px;
-    height: 48px;
-`;
-
